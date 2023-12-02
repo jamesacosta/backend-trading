@@ -9,7 +9,7 @@ public class Allows implements WebMvcConfigurer {
     @Override//Annotation that brings a method since an interface implemented
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200")
+                .allowedOrigins("https://tradingupfoundation.web.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);
